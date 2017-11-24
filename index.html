@@ -1,0 +1,250 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/two.css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+		rel="stylesheet">
+		<title>Document</title>
+	</head>
+	<body>
+	<!---------------------FOR TOP NAV---------------------->	
+	<nav class="navbar navbar-default" id="mainNav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" 
+				 	data-target="#button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			
+			<div class="collapse navbar-collapse" id="button">
+				<ul class="nav navbar-nav">
+					<li><a href="#slider">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li class="phoneimg"><a href="#" class="dropdown-toggle" 
+						data-toggle="dropdown">Info <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#features">Features</a></li>
+							<li><a href="#">Setting</a></li>
+						</ul>
+					</li>
+					<li><a href="#" data-target="#loginmodal" data-toggle="modal">Contact</a></li>
+				</ul>
+
+				<div class="modal fade" id="loginmodal" data-keyboard="false" 
+						data-backdrop="static" stab-index="-1">
+						<div class="modal-dialog modal-sm">	
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">&times;</button>
+									<h3 class="modal-title">Form</h3>
+								</div>
+
+								<div class="modal-body">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-3">
+												<form>
+													<div class="form-group">
+														<label for="inputusername">User Name:</label>
+														<input type="text" class="form-control"
+														placeholder="User Name" id="userName">
+													</div>
+													<div class="form-group">
+														<label for="inputpassword">Password:</label>
+														<input type="password" class="form-control"
+														placeholder="Password" id="userPassword">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="modal-footer">
+									<button class="btn btn-danger">Login</button>
+									<button class="btn btn-danger" id="hidemodal">Close</button>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>	
+	</nav>
+
+
+	<!-------------------------------FOR JUMBOTRON CONTAINING BG IMG---------------------------->
+	<section id="slider">	
+	<div class="row jumbotron">
+		<div class="container">
+			<div class="col-md-6">
+				<h1>Capture Life</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maxime officia porro. Iusto officiis, voluptate!</p>
+
+				<a href="#"><i class="fa fa-apple" aria-hidden="true"><span>Download on the</span>
+					<h4>App store</h4>
+				</i></a>
+
+				<a href="#"><i class="fa fa-play" aria-hidden="true"><span>Download on the</span>
+				<h4>Play Store</h4></i></a>
+			</div>
+
+			<div class="col-md-6">
+				<img src="images/phone.jpg" class="img-responsive img-showcase">
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+	<!------------------------FOR PANEL CONTAINING DETAILS-------------------------------->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						<h2 class="panel-title">Bootstrap</h2>
+						</div>
+
+						<div class="panel-body bg-danger">
+							<img src="images/tech_phone.jpg" class="img-responsive img-thumbnail
+									 panel-img">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet totam numquam similique obcaecati possimus sapiente, cupiditate iusto a fugiat?
+							</p>
+							<button class="btn btn-primary">Read More</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						<h2 class="panel-title">Bootstrap</h2>
+						</div>
+
+						<div class="panel-body bg-info">
+							<img src="images/tech_tablet.jpg" class="img-responsive img-thumbnail
+									 panel-img">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet totam numquam similique obcaecati possimus sapiente, cupiditate iusto a fugiat?
+							</p>
+							<button class="btn btn-primary">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						<h2 class="panel-title">Bootstrap</h2>
+						</div>
+
+						<div class="panel-body bg-warning">
+							<img src="images/tech_camera.jpg" class="img-responsive img-thumbnail
+									 panel-img">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet totam numquam similique obcaecati possimus sapiente, cupiditate iusto a fugiat?
+							</p>
+							<button class="btn btn-primary">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!------------------------------FOR COLLAPASABLE ACCORDION CONTAINING FEATURES---------------->
+	<section id="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<div id="accordion" class="panel-group">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelbodyone" data-toggle="collapse" 
+									data-parent="#accordion">
+										Battery
+									</a>
+								</h4>
+							</div>
+							<div id="panelbodyone" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>5000 mh</li>
+										<li>1 year Battery Warrenty</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelbodytwo" data-toggle="collapse" 
+									data-parent="#accordion">
+										Camera
+									</a>
+								</h4>
+							</div>
+							<div id="panelbodytwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li>Front:5px;</li>
+										<li>Back:10px;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#panelbodythree" data-toggle="collapse" 
+									data-parent="#accordion">
+										Storage
+									</a>
+								</h4>
+							</div>
+							<div id="panelbodythree" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<ul>
+										<li>Internal:32GB</li>
+										<li>External:up to 16GB</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!----------------FOR FOOTER SECTION-------------->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<span><i class="glyphicon glyphicon-chevron-up" id="top"></i></span>
+					<p>Copyright &copy:2017,All Right Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+		
+
+		<script src="bootstrap/js/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="bootstrap/js/three.js"></script>
+	</body>
+	</html>

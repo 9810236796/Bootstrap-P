@@ -1,0 +1,247 @@
+body{
+	position:relative;
+	overflow-x:hidden;
+}
+h1{
+	display:inline-block;
+}
+/*FOR FIXED TOP MENU*/
+.sticky{
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	z-index: 2000;
+	text-align: center;
+	background-color:#fff;
+}
+
+
+
+/*FOR TOP NAV*/
+#mainNav{
+	height:60px;
+	padding:5px;
+	margin:0px;
+}
+
+#mainNav ul li{
+	width:150px;
+	height:50px;
+	line-height:50px;
+}
+
+#mainNav ul li a{
+	color:#232323;
+	font-size:20px;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+
+#mainNav ul li a:hover{
+	text-decoration:underline;
+}
+
+
+/*FOR JUMBOTRON*/
+#slider{
+	margin:0px;
+	padding:0px;
+}
+.jumbotron{
+	background-image:url(../images/workbench.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	min-height:600px;
+}
+.jumbotron p{
+	color:#fff;
+	font-size:50px;
+	letter-spacing:2px;
+}
+.jumbotron .fa{
+	background-color:rgba(0,0,0,0.7);
+	width:200px;
+	height:80px;
+	color:#fff;
+	margin:5px;
+	padding:5px;
+	border-radius:10px;
+}
+.jumbotron .fa-apple{
+	font-size:50px;
+	margin:0px 5px;
+}
+.jumbotron .fa-play{
+	font-size:50px;
+}
+
+.jumbotron span{
+	font-size:20px;
+	display:inline-block;
+	text-align:center;
+	transform:translateY(-10px);
+	margin-left:5px;
+	overflow:none;
+}
+
+.jumbotron h4{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	transform:translateY(-25px);
+}
+
+.jumbotron h1{
+	color:#fff!important;
+	margin-top:50px;
+}
+
+.jumbotron .img-showcase{
+	margin-top:50px;
+	width:100%;
+}
+
+/*FOR PANEL*/
+#about{
+	padding:20px;
+}
+.panel .panel-title{
+	text-align:center;
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.panel .panel-img{
+	margin:5px auto;
+	padding:5px;
+	transform:translateX(5px);
+}
+
+.panel-body p{
+	font-size:18px;
+	text-align:justify;
+}
+
+.panel-body .btn{
+	transform:translateX(100px);
+}
+
+
+/*FOR COLLAPSEABLE ACCORDION*/
+#features{
+	background-color:#1caa98;
+	padding:40px 10px;
+}
+
+
+#features  .fa-mobile{
+	font-size:400px;
+	display:block;
+	text-align:center;
+}
+
+#features ul li{
+	list-style:inside;
+	font-size:18px;
+	letter-spacing:2px;
+	line-height:2.0em;
+	padding:5px;
+	font-weight:bold;
+}
+
+#features #accordion{
+	margin-top:50px;
+}
+
+
+/*FOR FOOTER*/
+footer{
+	background-color:#232323;
+	color:#fff;
+	text-align:center;
+	padding:50px;
+	font-size:20px;
+}
+
+footer .glyphicon-chevron-up{
+	font-size:30px;
+	cursor:pointer;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width:1000px){
+	.jumbotron{
+		background-size:100% 100%;
+	}
+
+	.jumbotron h1{
+		margin-top:100px;
+	}
+
+	.jumbotron .img-showcase{
+		margin-top:100px;
+		
+	}
+	#about{
+		padding:5px;
+	}
+	
+	.panel .panel-img{
+		width:100%;
+	}
+
+
+	#features{
+		padding:20px 5px;
+	}
+
+	footer{
+		padding:20px;
+	}
+
+
+}
+
+@media(max-width:770px){
+
+	.nav{
+		background-color:#fff;
+		position:fixed;
+		top:40px;
+		width:100%;
+		z-index:1;
+	}
+	#mainNav{
+		width:100%;
+		text-align:center;
+	}
+
+	#mainNav ul li{
+		width:100%;
+		line-height:0px;
+		
+	}
+
+	#mainNav ul li a{
+		color:#232323;
+		font-size:20px;
+		font-weight:bold;
+		letter-spacing:2px;
+	}
+
+	#mainNav ul li a:hover{
+		text-decoration:underline;
+	}
+
+	.sticky{
+		display:none;
+	}
+
+}
+
+
+
